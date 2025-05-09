@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { onMounted } from "vue";
 
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
     
 onMounted(() => {
 
@@ -15,7 +15,6 @@ onMounted(() => {
       end: "bottom 0%",
       scrub: 1,
       pin: ".background-container",
-      markers: true,
     },
     scale: 5,
     y: 220,
@@ -30,7 +29,6 @@ onMounted(() => {
     endTrigger: "world",
     end: "center 0%",
     scrub: 1,
-    markers: true,
   },
   opacity: 1, 
 });
@@ -42,7 +40,6 @@ gsap.to("#enter", {
       endTrigger: "world",
       end: "center 0%",
       scrub: true,
-      markers: true,
     },
     opacity: 0,
   });
