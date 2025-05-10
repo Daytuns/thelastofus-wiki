@@ -49,10 +49,10 @@ gsap.to("#enter", {
 </script>
 
 <template>
-  <section class="relative w-full overflow-hidden world">
+  <section class="relative w-full overflow-hidden bg-black world">
     <div class="relative mx-auto background-container" style="aspect-ratio: 16 / 9; width: 100%; max-width: 1920px;">
         <img
-        src="../assets/HeroBG-green6.png"
+        src="../assets/HeroBG-green6.webp"
         alt="Hero Background"
         class="absolute inset-0 w-full h-full object-cover"
         />
