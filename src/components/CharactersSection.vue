@@ -10,7 +10,7 @@ onMounted(() => {
   gsap.to("#left-image", {
     scrollTrigger: {
       trigger: "#left-image",
-      start: "100% bottom",
+      start: "80% bottom",
       end: "center center",
       scrub: 1,
     },
@@ -20,7 +20,7 @@ onMounted(() => {
   gsap.to(".right p", {
     scrollTrigger: {
       trigger: "#left-image",
-      start: "100% bottom",
+      start: "80% bottom",
       end: "center center",
       scrub: 1,
     },
@@ -30,7 +30,7 @@ onMounted(() => {
   gsap.to(".characters-wrapper", {
     scrollTrigger: {
       trigger: "#left-image",
-      start: "100% bottom",
+      start: "80% bottom",
       end: "center center",
       scrub: 1,
     },
@@ -41,22 +41,12 @@ onMounted(() => {
   gsap.to(".character-description", {
     scrollTrigger: {
       trigger: "#left-image",
-      start: "100% bottom",
+      start: "80% bottom",
       end: "center center",
       scrub: true,
     },
     opacity: 1,
   });
-
-  // gsap.to("#characterPic", {
-  //   scrollTrigger: {
-  //     trigger: "#left-image",
-  //     start: "100% bottom",
-  //     end: "center center",
-  //     scrub: 1,
-  //   },
-  //   opacity: 1,
-  // });
 
 });
 
@@ -68,71 +58,73 @@ const characters = [
     Joel was a survivor in post-apocalyptic America that had been ravaged by the Cordyceps brain infection. After losing his only daughter Sarah in the early stages of the outbreak, Joel became a ruthless and cynical smuggler eventually tasked with smuggling and protecting Ellie Williams, a young girl who was the key to mankind's survival. Joel eventually formed a strong bond with her.`
   },
   {
-    name: 'DINA',
-    picture: new URL('../assets/Dina.webp', import.meta.url).href,
-    description: `Dina is a prominent character in The Last of Us Part II. She is Ellie’s close friend and romantic partner. Dina accompanies Ellie on her journey for revenge and provides emotional support throughout their time in Seattle.`
+    name: 'DYNE',
+    picture: new URL('../assets/Dina1.webp', import.meta.url).href,
+    description: `Dina is a prominent character in The Last of Us Part II. She is Ellie’s close friend and romantic partner. Dina accompanies Ellie on her journey for revenge and provides emotional support throughout their time in Seattle. <br><br>Like Ellie, she was orphaned at a young age and forced to survive on her own and be self-sufficient. Her strong moral compass and honest nature bring out the best in Ellie.`
   },
   {
     name: 'ELLIE WILLIAMS',
     picture: new URL('../assets/EllieWilliams.webp', import.meta.url).href,
-    description: `Ellie Williams is the central character of The Last of Us series. She serves as the protagonist of The Last of Us: American Dreams, the playable deuteragonist of The Last of Us Part I, the playable protagonist of The Last of Us: Left Behind, the playable dual protagonist of The Last of Us Part II, and a playable character in the No Return mode.<br> <br>
-    Ellie grew up as an orphan in the Boston quarantine zone and attended a military preparatory school. When Ellie was fourteen, she was infected with the Cordyceps brain infection, where Ellie discovered she was immune. The leader of the Fireflies, Marlene, believed that she was the key to reverse engineering a vaccine. Marlene tasked Joel Miller, a smuggler, with escorting Ellie outside of the QZ.`
+    description: `When we first meet Ellie, she's a 14-year-old girl who hasn't known the "normal" world before 2013. Therefore, Joel becomes not just her transport… but also a guide to the world. She's precocious, witty, and capable. Whether it's with her wordplay or overcoming crises, her cunning and resourcefulness prove invaluable. <br><br>
+    Five years later, we reunite with Ellie in The Last of Us Part II. She's more confident, honest, and stronger. When a traumatic event rocks her and her community, she embarks on a journey of revenge. Though she's matured, she must grapple not only with her adversaries, both human and infected, but also with the emotional burden of her actions.`
   },
   {
     name: 'ABBY ANDERSON',
-    picture: new URL('../assets/AbbyAnderson.webp', import.meta.url).href,
-    description: `Abby Anderson is the dual protagonist of The Last of Us Part II. A former Firefly, she seeks revenge against Joel for killing her father, Jerry Anderson. Her story runs parallel to Ellie’s, offering a contrasting perspective on revenge and forgiveness.`
+    picture: new URL('../assets/AbbyAndrson1.webp', import.meta.url).href,
+    description: `When we first meet Abby in The Last of Us Part II, she's a key member of the WLF. Despite her reputation as a formidable fighter, she masks her vulnerability beneath a stoic and commanding presence. She and her father were once members of the Fireflies until, following a tragic accident, Abby was left alone. Now she must find her identity, meaning, and purpose beyond her need for justice.`
   },
   {
     name: 'TOMMY MILLER',
-    picture: new URL('../assets/TommyMiller.webp', import.meta.url).href,
-    description: `Tommy is Joel’s younger brother and a former Firefly. He eventually settles in Jackson and helps lead the community. In Part II, Tommy plays a key role in encouraging Ellie to pursue vengeance.`
+    picture: new URL('../assets/Tommy.webp', import.meta.url).href,
+    description: `Though he shares his brother Joel's ruggedness and determination, Tommy is distinguished by his impulsive, compassionate, and optimistic personality. After a time fighting alongside the Fireflies, he meets his future wife, Maria, and her community in Jackson, Wyoming. With this newfound sense of values, he seeks to create a rich and meaningful life despite daunting circumstances. <br><br>
+    In The Last of Us Part II, Elli and Joel join Maria and Tommy's community. Tommy continues his personal mission, patrolling and leading the community alongside Maria, and also welcomes Ellie into his family.`
   },
   {
     name: 'ISAAC DIXON',
     picture: new URL('../assets/IsaacDixon.webp', import.meta.url).href,
     description: `Isaac is the authoritarian leader of the Washington Liberation Front (WLF). He commands Abby and her group and is focused on winning the war against the Seraphites.`
   },
-  {
-    name: 'SARAH MILLER',
-    picture: new URL('../assets/SarahMiller.webp', import.meta.url).href,
-    description: `Sarah is Joel’s teenage daughter. Her tragic death during the initial Cordyceps outbreak profoundly affects Joel and sets the tone for the rest of the series.`
-  },
+  // {
+  //    name: 'SARAH MILLER',
+  //    picture: new URL('../assets/SarahMiller.webp', import.meta.url).href,
+  //    description: `Sarah is Joel’s teenage daughter. Her tragic death during the initial Cordyceps outbreak profoundly affects Joel and sets the tone for the rest of the series.`
+  // },
   {
     name: 'JESSE',
-    picture: new URL('../assets/Jesse.webp', import.meta.url).href,
-    description: `Jesse is a resident of Jackson and Dina’s ex-boyfriend. He is a loyal friend to Ellie and supports her during her mission in Seattle.`
+    picture: new URL('../assets/Jesse1.webp', import.meta.url).href,
+    description: `Jesse is a resident of Jackson and Dina’s ex-boyfriend. He is a loyal friend to Ellie and supports her during her mission in Seattle. <br><br>
+    Jesse is a natural leader in the community with a strong moral compass. He's driven by his desire to protect those in his life. His combat experience and commanding nature make him an elite patrolman.`
   },
   {
     name: 'TESS SERVOPOULOS',
     picture: new URL('../assets/Tess.webp', import.meta.url).href,
-    description: `Tess is Joel’s smuggling partner and friend. She helps Joel escort Ellie in the early stages of The Last of Us Part I.`
+    description: `Strong, capable, and arguably more ruthless than her smuggling partner, Joel, Tess overcame the hardships of the brutal world around her to become a skilled strategist and negotiator. Her leadership and physical prowess made her a respected figure in the Boston quarantine zone. Despite adapting to the "kill or be killed" mentality of a hardened survivor, she remains loyal and courageous, ultimately proving her selflessness by aiding Joel and Ellie's journey.`
   },
   {
     name: 'LEV',
     picture: new URL('../assets/Lev.webp', import.meta.url).href,
-    description: `Lev is a young Seraphite who flees his cult with his sister Yara. He forms a strong bond with Abby and helps her rediscover her humanity.`
+    description: `Lev is a young Seraphite who flees his cult with his sister Yara. <br><br>Despite the dangers of expressing his identity within his fundamentalist Seraphite community, Lev forges his own path forward, training to become a skilled warrior. He is loyal, austere, and true to his values. Previously shielded from the outside world, his worldview broadens significantly when he meets Abby.`
   },
   {
     name: 'BILL',
     picture: new URL('../assets/Bill.webp', import.meta.url).href,
-    description: `Bill is a reclusive survivor who lives in a heavily booby-trapped town. He helps Joel and Ellie in Part I, providing them with supplies and a vehicle.`
+    description: `Bill is the last survivor of his town, where he stayed while the other residents evacuated or succumbed to the infection. His pragmatism gave him the necessary powers to fortify his place against external threats, both human and infected. His isolation resulted in loneliness and paranoia… though he'd be the last person to admit it.`
   },
   {
     name: 'YARA',
     picture: new URL('../assets/Yara.webp', import.meta.url).href,
-    description: `Yara is Lev’s older sister. A former Seraphite, she protects Lev and aids Abby in their escape from the WLF and their former cult.`
+    description: `The eldest daughter of a fundamentalist Seraphite mother, Yara is seemingly staunchly devoted to her faith. When she meets Abby, she finds the strength to stand up for her own beliefs… and take on the role of protector of her younger brother, Lev.`
   },
   // {
   //   name: 'HENRY AND SAM',
   //   picture: new URL('../assets/HenryAndSam.webp', import.meta.url).href,
   //   description: `Henry and Sam are brothers who briefly accompany Joel and Ellie. Their tragic story highlights the harshness of the infected world.`
   // },
-  {
-    name: 'MANNY ALVAREZ',
-    picture: new URL('../assets/MannyAlvarez.webp', import.meta.url).href,
-    description: `Manny is Abby’s close friend and a member of the WLF. He is known for his humor and loyalty, helping Abby throughout her journey.`
-  },
+  // {
+  //   name: 'MANNY ALVAREZ',
+  //   picture: new URL('../assets/MannyAlvarez.webp', import.meta.url).href,
+  //   description: `Manny is Abby’s close friend and a member of the WLF. He is known for his humor and loyalty, helping Abby throughout her journey.`
+  // },
   // {
   //   name: 'RILEY ABEL',
   //   picture: new URL('../assets/RileyAbel.webp', import.meta.url).href,
@@ -146,7 +138,7 @@ const characters = [
   {
     name: 'MARLENE',
     picture: new URL('../assets/Marlene.webp', import.meta.url).href,
-    description: `Marlene is the leader of the Fireflies and Ellie’s guardian. She tasks Joel with smuggling Ellie and ultimately faces a moral dilemma over Ellie’s fate.`
+    description: ` Marlene has been at the forefront of the fight to overthrow the military's oppressive control of the quarantine zones. Despite her experience supporting the rebellion, she remains a gentle and compassionate person. Her background in medicine fueled her desire to save humanity—something she will pursue at any cost. <br><br>Marlene is the leader of the Fireflies and Ellie’s guardian. She tasks Joel with smuggling Ellie and ultimately faces a moral dilemma over Ellie’s fate.`
   },
   {
     name: 'JERRY ANDERSON',
@@ -175,7 +167,7 @@ function selectCharacter(character) {
       characterPicTween = gsap.to("#characterPic", {
         scrollTrigger: {
           trigger: "#left-image",
-          start: "100% bottom",
+          start: "80% bottom",
           end: "center center",
           scrub: 1
         },
@@ -207,13 +199,13 @@ function selectCharacter(character) {
       <img
         :src="selectedCharacter ? selectedCharacter.picture : ''"
         :alt="selectedCharacter ? selectedCharacter.name : ''"
-        class="object-contain max-h-3/4 fixed left-0 bottom-0 opacity-0"
+        class="object-contain max-h-3/4 fixed left-0 bottom-0 opacity-0 z-10"
         id="characterPic"
         loading="lazy"
       >
       <div class="opacity-0 character-description">
-        <h1 v-if="selectedCharacter" class="text-white w-1/4 h-1/2 roboto fixed top-20 right-1/2 mr-10" v-html="selectedCharacter.name"></h1>
-        <p v-if="selectedCharacter" class="text-[#7F7E7E] w-1/4 h-1/2 text-base roboto fixed top-30 right-1/2 mr-10" v-html="selectedCharacter.description"></p>
+        <h1 v-if="selectedCharacter" class="text-white w-1/4 h-1/2 roboto fixed top-20 right-1/2 mr-10 z-0" v-html="selectedCharacter.name"></h1>
+        <p v-if="selectedCharacter" class="text-[#7F7E7E] w-1/4 h-1/2 text-base roboto fixed top-30 right-1/2 mr-10 z-0" v-html="selectedCharacter.description"></p>
       </div>
     </div>
 
