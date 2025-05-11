@@ -8,8 +8,8 @@ gsap.registerPlugin(ScrollTrigger);
 onMounted(() => {
   gsap.to("#right-bg", {
     scrollTrigger: {
-      trigger: "#right-bg",
-      start: "100% bottom",
+      trigger: "#left-image",
+      start: "60% bottom",
       end: "center center",
       scrub: 1,
     },
@@ -19,7 +19,7 @@ onMounted(() => {
   gsap.to(".left p", {
     scrollTrigger: {
       trigger: "#right-bg",
-      start: "100% bottom",
+      start: "60% bottom",
       end: "center center",
       scrub: 1,
     },
@@ -28,8 +28,8 @@ onMounted(() => {
 
   gsap.to(".infected-wrapper", {
     scrollTrigger: {
-      trigger: "#right-bg",
-      start: "100% bottom",
+      trigger: "#left-image",
+      start: "60% bottom",
       end: "center center",
       scrub: 1,
     },
@@ -39,7 +39,7 @@ onMounted(() => {
 
   gsap.to(".infected-description", {
     scrollTrigger: {
-      trigger: "#right-bg",
+      trigger: "#left-image",
       start: "100% bottom",
       end: "center center",
       scrub: true,
@@ -96,8 +96,8 @@ function selectInfected(unit) {
     } else {
       infectedPicTween = gsap.to("#infectedPic", {
         scrollTrigger: {
-          trigger: "#right-bg",
-          start: "100% bottom",
+          trigger: "#left-image",
+          start: "60% bottom",
           end: "center center",
           scrub: 1
         },
@@ -149,15 +149,15 @@ function selectInfected(unit) {
       <img
         :src="selectedInfected ? selectedInfected.picture : ''"
         :alt="selectedInfected ? selectedInfected.name : ''"
-        class="object-contain max-h-3/4 fixed right-0 bottom-0 opacity-0 z-12"
+        class="object-contain max-h-3/4 absolute right-0 bottom-0 opacity-0 z-12"
         id="infectedPic"
         loading="lazy"
       >
 
       <!-- Infected Description -->
       <div class="opacity-0 infected-description">
-        <h1 v-if="selectedInfected" class="text-white w-1/4 h-1/2 roboto fixed top-20 left-1/2 ml-10 z-12" v-html="selectedInfected.name"></h1>
-        <p v-if="selectedInfected" class="text-[#7F7E7E] w-1/4 h-1/2 text-base roboto fixed top-30 left-1/2 ml-10 z-12" v-html="selectedInfected.description"></p>
+        <h1 v-if="selectedInfected" class="text-white w-1/2 h-1/2 roboto absolute top-20 left-0 ml-10 z-12" v-html="selectedInfected.name"></h1>
+        <p v-if="selectedInfected" class="text-[#7F7E7E] w-1/2 h-1/2 text-base roboto absolute top-30 left-0 ml-10 z-12" v-html="selectedInfected.description"></p>
       </div>
     </div>
   </div>
