@@ -18,7 +18,7 @@ onMounted(() => {
 
   gsap.to(".left p", {
     scrollTrigger: {
-      trigger: "#right-bg",
+      trigger: "#left-image",
       start: "60% bottom",
       end: "center center",
       scrub: 1,

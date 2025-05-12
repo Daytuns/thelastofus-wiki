@@ -1,5 +1,5 @@
 <template>
-  <a :href="game.link || '#'" class="bg-transparent hover:bg-[#1a1a1a] rounded-lg shadow-md hover:scale-[1.03] transition-transform snap-center w-[300px] flex-shrink-0 hover:border hover:border:solid hover:border-white">
+  <a :href="game.link || '#'" class="bg-transparent hover:bg-[#1a1a1a] rounded-lg shadow-md hover:scale-[1.03] transition-transform snap-center w-[300px] flex-shrink-0 hover:border hover:border:solid hover:border-white hover:z-50">
     <div class="card__blocks">
       <!-- Image -->
       <div class="card__media-block">

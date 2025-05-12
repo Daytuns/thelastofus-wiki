@@ -7,10 +7,10 @@
     />
     <h2 class="oswald text-4xl mb-4 font-bold z-1">DISCOVER THE LAST OF US</h2>
 
-    <div class=" mx-auto max-w-screen-xl px-4 py-10 z-1">
-        <div class="simple-carousel simple-carousel--same-height">
-        <div class="simple-carousel-content overflow-x-auto">
-            <div class="flex gap-6 snap-x snap-mandatory scroll-smooth pb-4">
+    <div class=" mx-auto max-w-screen-xl py-10 z-1">
+        <div class="overflow-x-scroll relative no-scrollbar">
+        <div class="relative min-w-full">
+            <div class="flex gap-6 scroll-smooth p-4 z-11">
             <GameCard
                 v-for="(game, index) in games"
                 :key="index"
@@ -19,6 +19,7 @@
             </div>
         </div>
         </div>
+        <p class="text-xs w-full flex justify-center text-gray-400 mt-2">← Scroll to explore →</p>
     </div>
     </section>
 
@@ -62,7 +63,7 @@ const games = [
   {
     title: 'The Last of Us Remastered',
     image: new URL('../assets/games/Remastered.webp', import.meta.url).href,
-    description: 'The Last of Us™, winner of over 200 Game of the Year awards, has been rebuilt for the PlayStation®4 console. It now features high-resolution, full 1080p character models, improved shadows and lighting, and several other gameplay enhancements.',
+    description: 'The Last of Us™, winner of over 200 Game of the Year awards, has been rebuilt for the PlayStation®4 console. It now features high-resolution, full 1080p character models, and several other gameplay enhancements.',
     date: '07/22/2024'
   },
   {
@@ -75,5 +76,13 @@ const games = [
 </script>
 
 <style scoped>
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;    /* Firefox */
+}
 
 </style>
